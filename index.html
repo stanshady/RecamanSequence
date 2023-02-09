@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dan Nagel">
+
+    <title>Recaman Sequence</title>
+  </head>
+  
+  <body>
+    <h3>Recaman Sequence</h3>
+    <span>Press NEXT to produce the next Recaman Integer</span>
+    <button id="nextBtn">NEXT</button>
+    <p>Enter a non-negative integer, n, and press GENERATE to produce the first n Recaman Integers</p>
+    <input type="text" id="nth">
+    <button id="generateBtn">GENERATE</button>
+    <p id="displayInts"></p>
+    <span>Press ANIMATE to see the generated list of Recaman Integers</span>
+    <button id="animateBtn">ANIMATE</button>
+    <p></p>
+    <svg xmlns="http://www.w3.org/2000/svg" id="recamanCircles" width="1200" height="400">
+      <path id="semicircles" fill="none" stroke="black" stroke-width="1"     
+        d="M 10 200"/>
+    </svg>
+  </body>
+
+  <script src="./main.js" type="module"></script>
+  
+</html>
