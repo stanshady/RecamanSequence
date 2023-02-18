@@ -65,7 +65,7 @@ function changeDisplayInts(){
 let elem = document.getElementById("semicircles");
 
 function makePath(){
-  let path = "M 10 350";
+  let path = "M 10 200";
 
   let clockwise = 1;
   let rScale = 2;
@@ -108,6 +108,7 @@ function drawPath(){
   function frame(){
     if (len <= 0){
       clearInterval(id);
+      finalPath.style.strokeDashoffset = 0;
     }
     else {
       len -= 20;
